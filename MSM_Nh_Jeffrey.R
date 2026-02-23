@@ -15,7 +15,7 @@ th=20       # Thining
 lw=tot*0.5  # Burnin
 up=tot
 
-##########  Intial value specification ###############
+##########  Intial parameter specification ###############
 
 N_estimate=array(NA,tot)
 
@@ -61,13 +61,6 @@ x0_star=x_111+x_101+x_011+x_001
 
 
 ########## Gibbs ######################################
-
-str=function(x) {
-  x*log(x)-x 
-}
-
-######################################
-
 
 
 beta_1=array(NA,tot)
@@ -463,6 +456,7 @@ clab = 2
 caxis = 2
 
 plot(w, Prob3_3(w), type="h", col="blue",lwd=2, xlim=c(0,0.05), ylim=c(0,1), xlab=expression(~ lambda), ylab=expression(P(beta[3]>lambda ~ "|" ~  data)) ,cex.lab=clab,cex.axis=caxis)
+
 
 
 

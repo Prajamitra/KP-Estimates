@@ -380,7 +380,7 @@ est_p_..1=median(p_..1)
 #######################  Estimates ####################################
 
 
-#########  KP Sise ###########
+#########  KP Sizes ###########
 
 N_mean_estimate
 N_median_estimate
@@ -396,7 +396,7 @@ beta3_estimate
 beta_ind_estimate
 
 
-############# 
+################### Capture probability of three sources  ##################################
 
 p_1_estimate
 p_2_estimate
@@ -410,8 +410,8 @@ est_p_..1  # List-3 capture probability
 
 
 
-################### Capture probability of three sources  ##################################
 
+################### Violin plot of capture probabilitties of three sources  ##################################
 
 
 data_Nhalangano=data.frame( uid = p_1.., rainbow = p_.1., survey= p_..1)
@@ -480,6 +480,7 @@ clab = 2
 caxis = 2
 
 plot(w, Prob3_3(w), type="h", col="blue",lwd=2, xlim=c(0,0.05), ylim=c(0,1), xlab=expression(~ lambda), ylab=expression(P(beta[3]>lambda ~ "|" ~  data)) ,cex.lab=clab,cex.axis=caxis)
+
 
 
 

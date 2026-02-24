@@ -372,13 +372,11 @@ beta3_estimate
 beta_ind_estimate
 
 
-############# 
+################### Capture probability of three sources  ##################################
 
 p_1_estimate
 p_2_estimate
 p_3_estimate
-
-
 
 est_p_1..  # List-1 capture probability
 est_p_.1.  # List-2 capture probability
@@ -386,7 +384,7 @@ est_p_..1  # List-3 capture probability
 
 
 
-################### Capture probability of three sources  ##################################
+################### Violin plot of capture probabilities of three sources  ##################################
 
 
 
@@ -456,6 +454,7 @@ clab = 2
 caxis = 2
 
 plot(w, Prob3_3(w), type="h", col="blue",lwd=2, xlim=c(0,0.05), ylim=c(0,1), xlab=expression(~ lambda), ylab=expression(P(beta[3]>lambda ~ "|" ~  data)) ,cex.lab=clab,cex.axis=caxis)
+
 
 
 

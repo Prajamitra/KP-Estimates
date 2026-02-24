@@ -404,8 +404,7 @@ ggplot(data_Nhalangano, aes(x=Sources, y=Probability, fill=Sources)) + geom_viol
 ############### Density plot KP size ############
 
 par(mfcol=c(1,1))
-plot(density(M),xlab="Population Size",ylab="Density",col="blue",lwd = 2, main = "")
-
+plot(density(M, bw=1),xlab="Population Size",ylab="Density",col="blue",lwd = 2, main = "")
 
 
 ##############  Plot to test significance of dependence parameters  ################################
@@ -454,6 +453,7 @@ clab = 2
 caxis = 2
 
 plot(w, Prob3_3(w), type="h", col="blue",lwd=2, xlim=c(0,0.05), ylim=c(0,1), xlab=expression(~ lambda), ylab=expression(P(beta[3]>lambda ~ "|" ~  data)) ,cex.lab=clab,cex.axis=caxis)
+
 
 
 

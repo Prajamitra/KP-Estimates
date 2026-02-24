@@ -44,7 +44,7 @@ p_2_3=0.15
 p_3_3=0.50
 
 
-#### hyper parameters of the priors
+#### Hyperparameters of the priors
 
 ## For Manzini 
 
@@ -59,7 +59,7 @@ b3_2=0.5
 
 beta_prior_2=array(0.5,4) # beta parameters are 0.5 refer Jeffrey's Dirichlet prior
 
-a_phi=1 # Hyper parameter for phi
+a_phi=1 # Hyperparameter for phi
 b_phi=1
 
 ## For Mbabane 
@@ -913,6 +913,7 @@ clab = 2
 caxis = 2
 
 plot(w, Prob3_3(w), type="h", col="blue",lwd=2, xlim=c(0,0.05), ylim=c(0,1), xlab=expression(~ lambda), ylab=expression(P(beta[3]>lambda ~ "|" ~  data)) ,cex.lab=clab,cex.axis=caxis)
+
 
 
 

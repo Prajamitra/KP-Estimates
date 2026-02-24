@@ -49,7 +49,7 @@ p_2_3=0.15
 p_3_3=0.50
 
 
-#### Hyper parameters of the priors
+#### Hyperparameters of the priors
 
 ## For Manzini 
 
@@ -892,6 +892,7 @@ clab = 2
 caxis = 2
 
 plot(w, Prob3_3(w), type="h", col="blue",lwd=2, xlim=c(0,0.05), ylim=c(0,1), xlab=expression(~ lambda), ylab=expression(P(beta[3]>lambda ~ "|" ~  data)) ,cex.lab=clab,cex.axis=caxis)
+
 
 
 

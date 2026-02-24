@@ -782,7 +782,7 @@ plot(density(M_3, bw=10),xlab="Population Size",ylab="Density",col="blue",lwd = 
 
 
 data_Manzini=data.frame(
-  Sources=c(rep("uid",length(t)),rep("coupon",length(t)),rep("survey",length(t))),
+  Sources=c(rep("uid",length(t)),rep("flas",length(t)),rep("survey",length(t))),
   Probability=c(p_1.._2,p_.1._2,p_..1_2)
 )
 
@@ -792,7 +792,7 @@ ggplot(data_Manzini, aes(x=Sources, y=Probability, fill=Sources)) + geom_violin(
 
 
 data_Mbabane=data.frame(
-  Sources=c(rep("uid",length(t)),rep("coupon",length(t)),rep("survey",length(t))),
+  Sources=c(rep("uid",length(t)),rep("flas",length(t)),rep("survey",length(t))),
   Probability=c(p_1.._3,p_.1._3,p_..1_3)
 )
 
@@ -892,6 +892,7 @@ clab = 2
 caxis = 2
 
 plot(w, Prob3_3(w), type="h", col="blue",lwd=2, xlim=c(0,0.05), ylim=c(0,1), xlab=expression(~ lambda), ylab=expression(P(beta[3]>lambda ~ "|" ~  data)) ,cex.lab=clab,cex.axis=caxis)
+
 
 
 

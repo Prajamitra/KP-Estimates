@@ -65,7 +65,7 @@ x0_star=x_111+x_101+x_011+x_001
 x0_star=x_111+x_101+x_011+x_001
 
 
-########## Gibbs ######################################
+########## Gibbs sampling ######################################
 
 
 
@@ -480,6 +480,7 @@ clab = 2
 caxis = 2
 
 plot(w, Prob3_3(w), type="h", col="blue",lwd=2, xlim=c(0,0.05), ylim=c(0,1), xlab=expression(~ lambda), ylab=expression(P(beta[3]>lambda ~ "|" ~  data)) ,cex.lab=clab,cex.axis=caxis)
+
 
 
 

@@ -771,10 +771,10 @@ est_p_..1_3
 
 ############### Density plot KP size ############
 
-#par(mfrow=c(2,2))
-plot(density(M_2, bw=15),xlab="Population Size",ylab="Density",col="blue",lwd = 2, main = "")
-plot(density(M_3, bw=20),xlab="Population Size",ylab="Density",col="blue",lwd = 2, main = "")
 
+#par(mfrow=c(2,2))
+plot(density(M_2, bw=2),xlab="Population Size",ylab="Density",col="blue",lwd = 2, main = "")
+plot(density(M_3, bw=10),xlab="Population Size",ylab="Density",col="blue",lwd = 2, main = "")
 
 
 
@@ -892,6 +892,7 @@ clab = 2
 caxis = 2
 
 plot(w, Prob3_3(w), type="h", col="blue",lwd=2, xlim=c(0,0.05), ylim=c(0,1), xlab=expression(~ lambda), ylab=expression(P(beta[3]>lambda ~ "|" ~  data)) ,cex.lab=clab,cex.axis=caxis)
+
 
 
 
